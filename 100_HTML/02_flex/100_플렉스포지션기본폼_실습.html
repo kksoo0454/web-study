@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스 기초 레이아웃 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 16px;
+            font-family: "Nanum Brush Script", cursive;
+            font-size: 24px;
+        }
+        header>nav {
+            background-color: red;
+            height: 40px;
+            
+        }
+        header>nav+nav {
+            background-color: orange;
+            height: 80px;            
+        }
+        main>section:nth-child(1) {
+            display: flex;
+            height: 300px;
+        }
+        main>section:nth-child(1)>div:nth-child(1) {
+            background-color: yellowgreen;
+            width: 50%;
+        }
+        main>section:nth-child(1)>div:nth-child(2) {
+            background-color: yellow;
+            width: 50%;
+        }
+        main>section:nth-child(2) {
+            display: flex;
+            height: 300px;
+        }
+        main>section:nth-child(2)>div:nth-child(1) {
+            background-color: green;
+            width: 33.333%;
+        }
+        main>section:nth-child(2)>div:nth-child(2) {
+            background-color: blue;
+            width: 33.333%;
+            color: white;
+        }
+        main>section:nth-child(2)>div:nth-child(3) {
+            background-color: darkgoldenrod;
+            width: 33.333%;
+            color: white;
+        }
+        footer {
+            background-color: purple;
+            height: 100px;
+        }
+        aside {
+            background-color: darkcyan;
+            width: 5%;
+            height: 200px;
+            position: fixed;
+            right: 0;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <nav>
+                <p>SNB메뉴</p>
+            </nav>
+            <nav>
+                <p>GNB메뉴</p>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <p>슬라이드 영역1</p>
+                </div>
+                <div>
+                    <p>슬라이드 영역2</p>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <p>콘텐츠영역1</p>
+                </div>
+                <div>
+                    <p>콘텐츠영역2</p>
+                </div>
+                <div>
+                    <p>콘텐츠영역3</p>
+                </div>
+            </section>
+            <footer>
+                <p>푸터 영역</p>
+            </footer>
+            <aside>
+                <p>별도영역</p>
+            </aside>
+        </main>
+    </div>
+</body>
+</html>

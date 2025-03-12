@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 20%;
+            margin: 0 auto;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+        }
+        header, main, footer, a {
+            margin-left: 10px;
+        }
+        header {
+            margin-bottom: 20px;
+        }
+        header div {
+            margin-bottom: 10px;
+            display: flex;
+        }
+        header div button {
+            position: absolute;
+            right: 0;
+        }
+        h1 {
+            height: 20px;
+            width: 10px;
+            background-image: url(./images/cartoon.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        header nav ul li {
+            width: 95%;
+            height: 32px;
+            border-radius: 5px;
+            line-height: 32px;
+        }
+        header nav ul li:hover {
+            transition: all 0.2s linear;
+            background-color: #a8a8a8;
+        }
+        main {
+            margin-bottom: 50px;
+        }
+        .workspace {
+            border: 1px solid rgb(241, 241, 241);
+            margin-bottom: 150px;
+        }
+        .workspace legend {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+        }
+        .workspace ul li {
+            width: 95%;
+            height: 32px;
+            border-radius: 5px;
+            line-height: 32px;
+        }
+        .workspace ul li:hover {
+            transition: all 0.2s linear;
+            background-color: #a8a8a8;
+        }
+        main nav ul li {
+            width: 95%;
+            height: 32px;
+            border-radius: 5px;
+            line-height: 32px;
+        }
+        main nav ul li:hover {
+            transition: all 0.2s linear;
+            background-color: #a8a8a8;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div>
+                <h1><div id="proflie"></div></h1>
+                <p>사용자 이름</p>
+                <button>새로작성</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">검색</a></li>
+                    <li><a href="#">Notion AI</a></li>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">수신함</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <fieldset class="workspace">
+                <legend>워크스페이스</legend>
+                <ul>
+                    <li><a href="#">문서1</a></li>
+                    <li><a href="#">문서2</a></li>
+                    <li><a href="#">문서3</a></li>
+                </ul>
+            </fieldset>
+            <nav>
+                <ul>
+                    <li><a href="#">설정</a></li>
+                    <li><a href="#">템플릿</a></li>
+                    <li><a href="#">휴지통</a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <div><a href="#">멤버 초대</a></div>
+            <div><button>Notion 메일 열기</button></div>
+            <div><button>Notion 캘린더 둘러보기</button></div>
+            <div><button>도움말</button></div>
+        </footer>
+    </div>
+</body>
+</html>
