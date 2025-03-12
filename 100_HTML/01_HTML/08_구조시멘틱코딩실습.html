@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조시멘틱코딩실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        #wrap {
+            margin: 0 auto;
+            width: 700px;
+            text-align: center;
+        }
+        header, footer {
+            background-color: red;
+        }
+        #left {
+            background-color: blue;
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #middle {
+            background-color: cyan;
+            font-family: "Nanum Myeongjo", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #right {
+            background-color: magenta;
+            font-family: "Nanum Gothic", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+        h1 {
+            font-family: "Oswald", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+        li {
+            font-family: "Play", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>LOGO</h1>
+            <ol>
+                <li>1 Depth Menu1
+                    <ol>
+                        <li>2 Depth SubMenu1</li>
+                        <li>2 Depth SubMenu2</li>
+                    </ol>
+                </li>
+                <li>1 Depth Menu2</li>
+                <li>1 Depth Menu3</li>
+                <li>1 Depth Menu4</li>
+            </ol>
+        </header>
+        <main>
+            <section id="left">
+                <h2>왼쪽 컨텐츠</h2>
+                <p>왼쪽 내용</p>
+            </section>
+            <section id="middle">
+                <h2>가운데 콘텐츠</h2>
+                <p>가운데 내용</p>
+            </section>
+            <section id="right">
+                <h2>오른쪽 콘텐츠</h2>
+                <p>오른쪽 내용</p>
+            </section>
+        </main>
+        <footer>
+            <p style="font-family: Nanum Myeongjo, serif;
+            font-weight: 400;
+            font-style: normal;">사이트 정보</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position + 배경이미지 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            margin: 0 auto;
+            width: 1000px;
+            height: 700px;
+            background-image: url(./images/avgers.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+        #wrap p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 125px;
+            font-weight: bold;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p>AVENGERS</p>
+    </div>
+</body>
+</html>

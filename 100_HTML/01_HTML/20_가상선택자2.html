@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 | Target</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* 공통 적용 클래스 */
+        .container {
+            width: 960px;
+            margin: 10px auto;
+        }
+        /* GNB Area */
+        .container nav {
+            height: 60px;
+            padding-bottom: 10px;
+            border-top: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+            text-align: center;
+        }
+        .container nav ul {
+            line-height: 60px;
+        }
+        .container nav ul li {
+            display: inline-block;
+            width: 150px;
+        }
+        /* Section Area */
+        .contents {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #222;
+            border-radius: 5px;
+            margin: 30px auto;
+        }
+        .contents h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .contents p {
+            line-height: 1.75em;
+        }
+        /* 가상선택자 | Target => 앵커 대상에 스타일 적용 */
+        /* 타켓 클릭했을 때 색깔 변함 */
+        #intro:target {
+            background-color: #0069e0;
+            color: #fff;
+        }
+        #room:target {
+            background-color: #ff9844;
+        }
+        #price:target {
+            background-color: #fff8dc;
+        }
+        #reservation:target {
+            background-color: #4172a2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- GNE Area -->
+        <nav>
+            <ul>
+                <li><a href="#intro">이용안내</a></li>
+                <li><a href="#room">객실소개</a></li>
+                <li><a href="#price">예약방법 및 요금</a></li>
+                <li><a href="#reservation">예약하기</a></li>
+            </ul>
+        </nav>
+        <!-- /GNB Area -->
+        <!-- Section Area -->
+        <!-- section#intro.contents -->
+        <section id="intro" class="contents">
+                <h2>이용안내</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit
+                    maiores odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit maiores
+                    odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.
+                </p>
+        </section>
+        <section id="room" class="contents">
+                <h2>객실소개</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit
+                    maiores odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit maiores
+                    odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.
+                </p>
+        </section>
+        <section id="price" class="contents">
+                <h2>예약방법 및 요금</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit
+                    maiores odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit maiores
+                    odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.
+                </p>
+        </section>
+        <section id="reservation" class="contents">
+                <h2>예약하기</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit
+                    maiores odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit maiores
+                    odit magnam, consectetur illo, earum commodi aspernatur sequi quibusdam
+                    doloribus dolore. Rem veritatis animi distinctio velit excepturi ducimus a.
+                </p>
+        </section>
+        <!-- /Section Area -->
+    </div>
+</body>
+</html>

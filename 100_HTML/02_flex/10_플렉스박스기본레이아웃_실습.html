@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플렉스박스기본레이아웃실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+            color: #fff;
+            font-family: "Kirang Haerang", system-ui;
+            font-size: 32px;
+        }
+        header {
+            height: 100px;
+            display: flex;
+            line-height: 100px;
+        }
+        header>h1 {
+            background-color: red;
+            width: 15%;
+        }
+        header>nav {
+            background-color: lightcoral;
+            width: 85%;
+        }
+        section:nth-child(1) {
+            height: 350px;
+            line-height: 350px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        section:nth-child(1)>div:nth-child(1) {
+            background-color: darkcyan;
+            width: 50%;
+        }
+        section:nth-child(1)>div:nth-child(2) {
+            background-color: yellow;
+            width: 25%;
+        }
+        section:nth-child(1)>div:nth-child(3) {
+            background-color: lightgreen;
+            width: 25%;
+        }
+        section:nth-child(2) {
+            height: 250px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        section:nth-child(2)>div:nth-child(1) {
+            background-color: lightblue;
+            width: 30%;
+        }
+        section:nth-child(2)>div:nth-child(2) {
+            background-color: orange;
+            width: 30%;
+        }
+        article {
+            width: 20%;  
+        }
+        article>div:nth-child(1) {
+            background-color: steelblue;
+            height: 125px;
+        }
+        article>div:nth-child(2) {
+            background-color: darkblue;
+            height: 125px;
+        }
+        section:nth-child(2)>div:nth-child(4) {
+            background-color: purple;
+            width: 20%;
+        }
+        footer {
+            background-color: dimgray;
+            height: 50px;
+            line-height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>FLEXIBLE BOX</h1>
+            <nav>GNB메뉴</nav>
+        </header>
+        <main>
+            <section>
+                <div>슬라이드영역</div>
+                <div>갤러리</div>
+                <div>인기검색어</div>
+            </section>
+            <section>
+                <div>최신글</div>
+                <div>인기글</div>
+                <article>
+                    <div>배너1</div>
+                    <div>배너2</div>
+                </article>
+                <div>소셜 네트워크</div>
+            </section>
+        </main>
+        <footer>
+            <p>푸터</p>
+        </footer>
+    </div>
+</body>
+</html>

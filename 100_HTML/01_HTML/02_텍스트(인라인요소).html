@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>텍스트관련요소(인라인레벨요소)</title>
+        <style>
+            /* 선택자(CSS 적용시킬 대상지정){ 속성명:속성값; } */
+            span {
+                color: purple;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            q {
+                color: blue;
+            }
+            s {
+                color: red;            
+            }
+        </style>
+    </head>
+    <body>
+        <h1>텍스트 요소 : 웹접근성과 관련이 높은 요소들</h1>
+        <p>
+            <!-- strong태그 : 낭독기에서 강조하여 읽어줌 -->
+            <!-- b(bold)태그 : 단지 볼드체(시각적으로만 강조) -->
+            <!-- 태그 시작과 끝에 포함된 내용만 태그 속성 적용됨(구조에 영향x) -->
+            <strong>주말</strong>마다 <b>서귀포 문화 예술 디자인</b> 시장이 열립니다.
+        </p>
+        <p>
+            <!-- em태그 : 낭독기에서 강조하여 읽어줌 -->
+            <!-- i태그 : 단지 이탤릭체(시각적으로만 강조) -->
+            <em>아트마켓</em>이라고도 부르는데, <b><i>문화예술체험</i></b>이나 공연관람을 할 수 있습니다.
+        </p>
+        <h2>웹접근성</h2>
+        <p>
+            <!-- span태그 : 인라인레벨요소의 그룹핑 태그 | 주로 CSS와 연동하여 사용 -->
+            웹의 창시자 <span>팀 버너스리</span>는<br><br>
+            <!-- q태그 : 인용시 사용 "" 생성 -->
+            <q cite="http://sss.e3.d;">
+                웹의 힘은 보편성에 있다. 
+                장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다.
+            </q>
+            <!-- mark태그 : 형광펜 효과 -->
+            라는 말로 <mark>웹 접근성</mark>을 설명한다. 
+        </p>
+        <!-- 기타 텍스트 요소들 -->
+         <p>
+            <!-- abbr태그 :  축약 -->
+             <abbr title="WorldWideWeb">WWW</abbr>은 인터넷 발전에 많은 기여를 했다
+         </p>
+         <p>
+            <!-- sup태그 : 윗첨자 | sub태그 : 아랫첨자 -->
+             E=mc<sup>2</sup> <br><br>
+             H<sub>2</sub>O
+         </p>
+         <p>
+            <!-- u태그 : 밑줄 | s태그 : 취소선 -->
+            정기세일 : <u>2025-02-28 ~ 2025-03-01</u><br>
+            정기세일 취소 : <s>2025-02-28 ~ 2025-03-01</s>
+         </p>
+         <p>
+            <!-- small태그 : 부가정보처럼 작게 표시해도 되는 텍스트 -->
+            가격 : 20,000원 <small>(부가세별도)</small>
+         </p>
+         <!-- 링크 -->
+          ><a href="http://www.daum.net" target="_blank">Daum사이트로 이동</a></p>
+          <p><a href="https://www.google.com/?hl=ko" target="_blank">Google사이트로 이동</a></p>
+    </body>
+
+</html>

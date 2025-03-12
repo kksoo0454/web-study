@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경이미지, 위치속성</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        body {
+            background-image: url(./images/bg3.jpg);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            /* 배경이미지 고정 = 브라우저 기준 */
+            background-attachment: fixed;
+            /* 한줄표기법 */
+            background: url(./images/bg3.jpg) no-repeat right bottom fixed;
+            background-size: auto;
+        }
+        div {
+            width: 500px;
+            border: 1px solid #000;
+            padding: 10px;
+            margin-bottom: 20px;        
+        }
+        #bg1, #bg2, #bg3 {
+            background-image: url(./images/bg2.jpg);
+            background-repeat: no-repeat;
+        }
+        #bg1 {
+            background-position: right bottom;
+        }
+        #bg2 {
+            
+            background-position: center center;
+        }
+        #bg3 {
+            background-position: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- (#bg$>h2{Lorem Ipsum}+p)*3 -->
+    <!-- 아래 3블럭은 공동구조(차후 코딩할때 용이) -->
+    <div id="bg1">
+        <h2>Lorem Ipsum</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in eveniet
+            dolorum quisquam et mollitia dolor sit est, excepturi minima veritatis omnis
+            repudiandae atque repellat natus voluptates eligendi adipisci laudantium!
+        </p>
+    </div>
+    <div id="bg2">
+        <h2>Lorem Ipsum</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in eveniet
+            dolorum quisquam et mollitia dolor sit est, excepturi minima veritatis omnis
+            repudiandae atque repellat natus voluptates eligendi adipisci laudantium!
+        </p>
+    </div>
+    <div id="bg3">
+        <h2>Lorem Ipsum</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in eveniet
+            dolorum quisquam et mollitia dolor sit est, excepturi minima veritatis omnis
+            repudiandae atque repellat natus voluptates eligendi adipisci laudantium!
+        </p>
+    </div>
+</body>
+</html>

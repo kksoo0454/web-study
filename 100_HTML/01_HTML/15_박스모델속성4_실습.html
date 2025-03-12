@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model : 구글 웹폰트 박스실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            background-color: black;
+        }
+        .wrap {
+            margin: 0 auto;
+            width: 800px;
+            height: 800px;
+            background-color: white;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+        .oswald {
+            background-color: blue;
+            font-family: "Oswald", sans-serif;
+        }
+        .monoton {
+            background-color: green;
+            font-family: "Monoton", sans-serif;
+        }
+        .noto {
+            background-color: yellow;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        .nanum {
+            background-color: magenta;
+            font-family: "Nanum Pen Script", cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="oswald"><p>OSWALD</p></div>
+        <div class="monoton"><p>MONOTON</p></div>
+        <div class="noto"><p>노토산스케이알</p></div>
+        <div class="nanum"><p>나눔펜스크립트</p></div>
+    </div>
+</body>
+</html>

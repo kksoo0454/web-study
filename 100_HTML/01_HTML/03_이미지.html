@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 사용</title>
+    <style>
+        img {
+            width: 480px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1. 로컬컴퓨터에서 사용하기 -->
+    <p>
+        <img src="./images/lenz.jpg" alt="무늬">
+        <img src="./images/desert.jpg" alt="사막">
+        <img src="./images/woman.jpg" alt="여인">
+    </p>
+
+    <!-- 2. CDN 방식으로 이미지 불러오기 -->
+    <p>
+        <img src="https://images.unsplash.com/photo-1740564001265-02fb7bd643c9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D" alt="언스플래쉬 이미지">
+        <img src="https://cdn.pixabay.com/photo/2025/02/09/16/57/blue-throated-toucanet-9394818_640.jpg" alt="새">
+    </p>
+    <p><img src="https://images.pexels.com/photos/3656773/pexels-photo-3656773.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="가수"></p>
+
+    <!-- 3. 가상 이미지 불러오기 = 더미이미지 -->
+    <img src="http://place-hold.it/640x480" alt="가상이미지">
+
+    <!-- 4. 투명배경사용 .png -->
+    <img src="./images/Apple Black.png" alt="투명이미지애플로고">
+
+    <!-- 5. 벡터방식사용 .svg -->
+    <img src="./images/os.svg" alt="svg애플로고">
+</body>
+</html>

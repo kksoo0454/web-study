@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초 종합 테스트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            margin: 0 auto;
+            width: 1000px;
+            background-color: #dcf0ff;
+            text-align: center;
+        }
+        ul {
+            width: 603px;
+            margin: 30px;
+            margin-left: 200px;
+            font-size: 20px;
+        }
+        li {
+            display: inline-block;
+            margin-left: 22px;
+            margin-right: 22px;
+            width: 70px;
+        }
+        li:hover {
+            background-color: #4d4d4d;
+            color: white;
+            cursor: pointer;
+        }
+        h2 {
+            font-family: "Oswald", sans-serif;
+            font-size: 60px;
+            margin: 60px;
+        }
+        fieldset {
+            border: 1px solid #a9a9a9;
+            border-collapse: collapse;
+            width: 600px;
+            height: 130px;
+            margin: 5px;
+            margin-left: 200px;
+        }
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            font-family: "Oswald", sans-serif;
+            background-image: url(./images/waterboom.jpg);
+            height: 120px;
+            margin-top: 20px;
+            font-size: 30px;
+            line-height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><img src="./images/montblanc_logo.png" alt=""></h1>
+            <nav>
+                <ul>
+                    <li>MENU1</li>
+                    <li>MENU2</li>
+                    <li>MENU3</li>
+                    <li>MENU4</li>
+                    <li>MENU5</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>2023-10-19</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium porro alias
+                    nihil tempore voluptate laborum quia aliquam possimus soluta? Inventore
+                    reiciendis deleniti incidunt iste vel iusto nisi provident expedita quod!
+                </p>            
+            </section>
+            <section>
+                <h2>Form List</h2>
+                <fieldset>
+                    <legend>Log-in Infomation</legend>
+                    <div class="info">
+                        <label for="id">ID: </label>
+                        <input type="text" name="id" id="id">
+                        <br>
+                        <label for="pw">PASSWORD: </label>
+                        <input type="password" name="pw" id="pw">
+                        <br>
+                        <label for="pwCheck">PASSCHECK</label>
+                        <input type="password" name="pwCheck" id="pwCheck">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Department</legend>
+                    <div class="info">
+                        <input type="checkbox" name="department1" id="department1">
+                        <label for="department1">Web Publishing</label>
+                        <br>
+                        <input type="checkbox" name="department2" id="department2">
+                        <label for="department2">App Ceveloper</label>
+                        <br>
+                        <input type="checkbox" name="department3" id="department3">
+                        <label for="department3">Web Planner</label>
+                    </div>
+                </fieldset>
+                <div class="button">
+                    <input type="submit" value="SUBMIT" id="submit">
+                    <button>BUTTON</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>COPYRIGHT ALL RIGHT RESERVED, MCSSAM</p>
+        </footer>
+    </div>
+</body>
+</html>

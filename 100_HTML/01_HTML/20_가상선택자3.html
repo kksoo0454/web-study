@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 | not()</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        /* 공통 적용 클래스 */
+        .container {
+            width: 960px;
+            margin: 10px auto;
+        }
+        /* GNB Area */
+        .container nav {
+            height: 60px;
+            padding-bottom: 10px;
+            border-top: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+            text-align: center;
+        }
+        .container nav ul {
+            line-height: 60px;
+        }
+        .container nav ul li {
+            display: inline-block;
+            width: 150px;
+        }
+        /* Form Area */
+        #signup {
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #222;
+            border-radius: 4px;
+            margin: 30px auto;
+        }
+        #signup fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 30px;
+            padding: 16px;
+        }
+        #signup legend {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 0 0 10px 5px;
+        }
+        #signup button {
+            display: block;
+            padding: 6px 24px;
+            border-radius: 20px;
+            font-family: "Nanum Pen Script", cursive;
+            margin-left: 270px;
+        }
+        /* 가상선택자 :not() | 특정요소를 제외하고 스타일 적용 */
+        #signup input:not([type="radio"]) {
+            width: 200px;
+            padding: 4px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #signup input:not([type="radio"]):hover {
+            border-color: #f00;
+        }
+
+        /* (중요) 선택자 원리 => CSS 스크립트 = input이 체크되면 label에 효과주기 */
+        #signup input:checked+label {
+            color: red;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- GNE Area -->
+        <nav>
+            <ul>
+                <li><a href="#intro">이용안내</a></li>
+                <li><a href="#room">객실소개</a></li>
+                <li><a href="#price">예약방법 및 요금</a></li>
+                <li><a href="#reservation">예약하기</a></li>
+            </ul>
+        </nav>
+        <!-- /GNB Area -->
+        <!-- Form Area -->
+        <form action="#" id="signup">
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름: </label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="tel">연락처: </label>
+                <input type="tel" id="tel" name="tel">
+            </fieldset>
+            <fieldset>
+                <legend>객실 형태</legend>
+                <input type="radio" name="room" id="basic" value="basic">
+                <label for="basic">기본형(최대2인)</label><br>
+                <input type="radio" name="room" id="family" value="family">
+                <label for="family">가족형(최대8인)</label>
+            </fieldset>
+            <button type="submit">제출</button>
+            <!-- /Form Area -->
+        </form> 
+    </div>
+</body>
+</html>

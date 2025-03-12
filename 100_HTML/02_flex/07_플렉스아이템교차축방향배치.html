@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        플렉스 아이템 교차축방향배치(align-items) => (부모박스)에 설정
+        :주축(row일때 x축, column일때 y축)의 수직방향으로 플렉스 아이템 배치
+        # 속성명 : align-items
+        # 속성값 : stretch(기본값), flex-start, flex-end, center, baseline
+    </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 240px;
+            height: 200px;
+            margin: 40px auto;
+            background-color: #8c8c8c;
+            /* 플렉스 */
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline;
+        }
+        #wrap>div {
+            width: 50px;
+            border: 2px solid #8c8c8c;
+        }
+        #item1 {
+            background-color: red;
+            min-height: 30px;
+        }
+        #item2 {
+            background-color: green;
+            min-height: 30px;
+        }
+        #item3 {
+            background-color: blue;
+            min-height: 30px;
+        }
+        #item4 {
+            background-color: yellow;
+            min-height: 30px;
+            font-size: 30px;
+        }
+        #item5 {
+            background-color: purple;
+            min-height: 30px;
+        }
+        #item6 {
+            background-color: orange;
+            min-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- #wrap>#item${$}*6 -->
+    <div id="wrap">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+        <div id="item4">4</div>
+        <div id="item5">5</div>
+        <div id="item6">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table : 구조테이블</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        td, th {
+            width: 80px;
+            padding: 10px;
+        }
+        thead {
+            background-color: #9ab1f1;
+        }
+        tfoot {
+            background-color: #f39843;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            <p>학교현황</p>
+        </caption>
+        <!-- table>tr>th*5로 한번에 생성 -->
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <!-- tr>th+td*4로 한번에 생성 -->
+        <tbody>
+            <tr>
+                <th>초등학교</th>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+            </tr>
+            <tr>
+                <th>중학교</th>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+            </tr>
+            <tr>
+                <th>고등학교</th>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+            </tr>
+            <tr>
+                <th>대학교</th>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+            </tr>
+            <tr>
+                <th>특수학교</th>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+                <td>12,345</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>52,345</td>
+                <td>32,345</td>
+                <td>62,345</td>
+                <td>72,345</td>
+            </tr>
+        </tfoot>
+        </table>
+    </body>
+</html>

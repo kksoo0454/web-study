@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model : 인라인블록</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .gnb {
+            border: 2px solid #666;
+            /*border-radius : 가장자리 둥글게 만듦 */
+            border-radius: 16px;
+            padding: 20px;
+            margin: 40px;
+        }
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            background-color: #666;
+        }
+        /* 가상 클래스 선택자(하위선택 주목) */
+        .gnb li:nth-child(4) {
+            margin-right: 0;
+
+        }
+        .gnb li a:hover {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="gnb">
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">MTSTORY</a></li>
+            <li><a href="#">VISION</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

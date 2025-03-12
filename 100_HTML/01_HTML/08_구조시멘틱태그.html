@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조시멘틱태그</title>
+    <style>
+        /* reset.css */
+        * {
+            /* m0으로 빠른 입력 */
+            margin: 0;
+            /* p0으로 빠른 입력 */
+            padding: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            /* fz16으로 빠른 입력 */
+            font-size: 16px;
+            /* fwn으로 빠른 입력 */
+            font-weight: normal;
+        }
+        a {
+            /* html의 기본값으로 상속됨(블랙) */
+            color: inherit;
+            /* tdn으로 빠른 입력 */
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        img {
+            /* vat로 빠른 입력 */
+            vertical-align: top;
+        }
+         /* Safe Area */
+         #wrap {
+            width: 960px;
+            margin: 0 auto;
+            background-color: red;
+            border: 1px solid #000;
+         }
+         /* 헤더영역 */
+         header {
+            background-color: #f258ad;
+         }
+         h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ccc;
+         }
+         section {
+            background-color: #f27830;
+         }
+         article {
+            background-color: #fff;
+         }
+         footer {
+            background-color: #f27830;
+         }
+         aside {
+            background-color: #fff;
+         }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. 헤더영역 시작 -->
+        <header>
+            <h1>로고</h1>
+            <h2>GNB 메뉴</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">메뉴1</a></li>
+                    <li><a href="#">메뉴2</a></li>
+                    <li><a href="#">메뉴3</a></li>
+                    <li><a href="#">메뉴4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 1. 헤더영역 끝 -->
+        <!-- 2. 메인 콘텐츠 영역 시작 -->
+         <main>
+            <!-- 2-1. 섹션영역 시작 -->
+             <section>
+                <h2>Queen 1집</h2>
+                <article>
+                    <ol>
+                        <li>보헤미안 랩소디</li>
+                        <li>레디오 가가</li>
+                        <li>킬러퀸</li>
+                    </ol>
+                </article>
+             </section>
+            <!-- 2-1. 섹션영역 끝 -->
+            <!-- 2-2. 섹션영역 시작 -->
+             <section>
+                <h2>Queen 2집</h2>
+                <article>
+                    <ol>
+                        <li>Sea of Rhye</li>
+                        <li>Made in heaven</li>
+                    </ol>
+                </article>
+             </section>
+            <!-- 2-2. 섹션영역 끝 -->
+            <!-- 2-3. 아티클영역 시작 -->
+            <article>
+                <h2>아티클 영역</h2>
+                <section>가사 1절</section>
+                <section>가사 2절</section>
+            </article>
+            <!-- 2-3. 아티클영역 끝 -->
+         </main>
+        <!-- 2. 메인 콘텐츠 영역 끝 -->
+        <!-- 3. 푸터 영역 시작 -->
+         <footer>
+            <p>
+                &copy; Copyright ALL Rights Reserved.
+            </p>
+         </footer>
+        <!-- 3. 푸터 영역 끝 -->
+        <!-- 4. 어사이드 영역 시작 -->
+         <aside>
+            <p>
+                본문 컨텐츠 내용 이와의 것들 사용하고 싶을때
+            </p>
+         </aside>
+        <!-- 4. 어사이드 영역 끝 -->
+    </div>
+</body>
+</html>

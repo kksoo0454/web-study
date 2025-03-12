@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조시멘틱태그실습</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        body {
+            background-color: #000;
+        }
+        #wrap {
+            width: 960px;
+            margin: auto;
+            background-color: #000;
+            border: 1px solid #000;
+        }
+        header {
+            background-color: red;
+        }
+        nav {
+            background-color: green;
+        }
+        main, #right, #aside1 {
+            background-color: #cc20be;
+        }
+        #left, #aside2 {
+            background-color: blue;
+        }
+        #middle {
+            background-color: #6dfdea;
+
+        }
+        footer {
+            background-color: yellow;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>LOGO</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="#">1 DEPTH MENU1</a>
+                        <ul>
+                            <li><a href="#">2 DEPTH subMENU1</a></li>
+                            <li><a href="#">2 DEPTH subMENU2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">1 DEPTH MENU1</a></li>
+                    <li><a href="#">1 DEPTH MENU2</a></li>
+                    <li><a href="#">1 DEPTH MENU3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="aside1">
+            <br>
+        </aside>
+        <main>
+            <section id="left">
+                <h2>왼쪽 콘텐츠</h2>
+                <br>
+                <article>왼쪽 내용</article>
+                <br>
+            </section>
+            <section id="middle">
+                <h2>가운데 콘텐츠</h2>
+                <br>
+                <article>가운데 내용</article>
+            </section>
+            <aside id="aside2">
+                <br>
+            </aside>
+            <section id="right">
+                <h2>오른쪽 콘텐츠</h2>
+                <br>
+                <article>오른쪽 내용</article>
+                <br>
+            </section>
+        </main>
+        <footer>
+            <p>사이트 정보</p>
+        </footer>
+    </div>
+</body>
+</html>

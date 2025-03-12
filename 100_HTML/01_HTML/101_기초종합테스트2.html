@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초 종합 테스트</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            /* 폰트 21픽셀 rem단위로 변환 -> (21/16) */
+            font-size: 1rem;
+            line-height: 1.4;
+            color: #222;
+            background-color: black;
+        }
+        #wrap {
+            width: 960px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: lightgray;
+        }
+        h1 img {
+            width: 80px;
+        }
+        .memu ul li {
+            display: inline-block;
+            margin: 20px;
+        }
+        .memu ul li:hover {
+            color: red;
+            background-color: yellow;
+        }
+        section>h2 {
+            font-family: "Oswald", sans-serif;
+            font-size: 2rem;
+            margin: 50px 0;
+        }
+        fieldset {
+            width: 600px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        footer {
+            background-image: url(./images/waterboom.jpg);;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 120px;
+        }
+        footer p {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 120px;
+        }
+        main {
+            margin-bottom: 24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><img src="./images/montblanc_logo.png" alt="몽블랑로고"></h1>
+            <nav class="memu">
+                <ul>
+                    <li><a href="#">MAIN1</a></li>
+                    <li><a href="#">MAIN2</a></li>
+                    <li><a href="#">MAIN3</a></li>
+                    <li><a href="#">MAIN4</a></li>
+                    <li><a href="#">MAIN5</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>2023-10-29</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, animi
+                    corporis iure quod distinctio aut odit culpa tempore et vel, enim provident modi
+                    qui quo voluptates doloremque eaque at ex?
+                </p>
+            </section>
+            <section>
+                <h2>Form List</h2>
+                <form action="#">
+                    <fieldset>
+                        <legend>Log-In Information</legend>
+                        <ul>
+                            <li>
+                                <label for="a_Id">ID: </label>
+                                <input type="text" id="a_Id" size="12">
+                            </li>
+                            <li>
+                                <label for="a_pw">PASSWORD: </label>
+                                <input type="password" id="a_pw" maxlength="10">
+                            </li>
+                            <li>
+                                <label for="a_pw2">PASSCHECK: </label>
+                                <input type="password" id="a_pw2" maxlength="10">
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Department</legend>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk1" value="web">Web Publishing
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk2" value="app">App Developer
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="chk3" value="planner">Web Planner
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <input type="submit" value="SUBMIT">
+                    <input type="button" value="BUTTON">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Copyright ALL Rights Reserves., MCSSAM</p>
+        </footer>
+    </div>
+</body>
+</html>

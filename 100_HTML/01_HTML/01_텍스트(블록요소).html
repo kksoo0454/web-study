@@ -1,0 +1,63 @@
+<!-- 주석문 : 참고문구 | 브라우저에서 표시되지 않는 내용, 개발자만 볼 수 있음 -->
+<!-- 웹문서의 유형을 지정하는 선언문 Doctype -->
+<!DOCTYPE html>
+<!-- lang="ko" | 문서에서 사용할 언어를 지정
+    검색사이트에서 특정언어로 제한하여 검색할때 필요
+    (화면낭독기)에서 해당 언어에 맞는 억양, 발음, 목소리등을 다르게 읽어줌-->
+<html lang="ko">
+    <head>
+        <title>텍스트관련요소(블록레벨요소)</title>
+        <!-- 인코딩 방식 = 영미권 이외의 국가에서 자국 문자 정상적으로 나오도록 할때 사용 -->
+        <meta charset="utf-8">
+        <meta name="keyword" content="키워드">
+        <meta name="description" content="상세설명">
+        <meta name="author" content="웹문서 개발자">
+    </head>
+    <body>
+        <!-- hn태그 : 제목표시하기 n = 1~6 
+         h1은 한번만 사용-->
+        <h1>이젠 컴퓨터 아카데미 노원</h1> 
+        <h2>이젠 컴퓨터 아카데미 노원</h2>
+        <h3>이젠 컴퓨터 아카데미 노원</h3>
+        <h4>이젠 컴퓨터 아카데미 노원</h4>
+        <h5>이젠 컴퓨터 아카데미 노원</h5>
+        <h6>이젠 컴퓨터 아카데미 노원</h6>
+        <!-- p태그 : 단락만들기 -->
+        <p>
+            <!-- 블록요소 -->
+            HTML, CSS, javaScript, jQuery
+        </p>
+        <p>
+            Java, JSP, Servlet, SQL, Oracle, Spring
+        </p>
+        <!-- hr태그 :  분위기 전환을 위한 수평줄 넣기 -->
+        <hr>
+        <!-- blockquote태그 : 인용문 = 들여쓰기가 자동으로 적용 -->
+         <blockquote>
+            성이시돌목장은 제주시에 있는 목장이다.(출처:향토문화전자대전)
+         </blockquote>
+        
+         <!-- 공백이 있어도 공백 한 칸인 것처럼 출력 -->
+         <h2>입력                        하는 그대로 화면에 표시하는 요소</h2>
+         <pre>
+                fuction ezen() {
+                document.write("자바스크립트");
+            }
+         </pre>
+
+         <h3>엔티티코드 : https://entitycode.com/</h3>
+         <p>
+            <!-- br태그 : 엔터친 것과 동일한 효과 -->
+            YOU & ME <br>
+            YOU &amp; ME
+            <!-- 공백표시 엔티티 코드 : &nbsp -->
+            YOU &nbsp; ME
+         </p>
+         <p>
+            YOU &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp;
+         </p>
+         <!-- 그냥 문자열로 넣어도 브라우저 출력은 되는데 css로 못건드림 -->
+         이젠컴퓨터 아카데미 이젠컴퓨터 아카데미 
+         이젠컴퓨터 아카데미 이젠컴퓨터 아카데미   
+        </body>
+</html>

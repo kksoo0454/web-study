@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 | 가상요소 수식규칙</title>
+    <style>
+        #wrap {
+            margin: 100px;
+            text-align: center;
+            color: #2b2b2b;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 24px;
+        }
+        table, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 20px;
+        }
+        td:hover {
+            background-color: darkgray;
+            cursor: pointer;
+        }
+        /* 수식 사용하여 선택 */
+        /* 2n = 짝수 */
+        table tr:nth-child(2n) {
+            background-color: gray;
+            color: #000;
+        }
+        /* odd = 홀수 */
+        table tr:nth-child(odd) {
+            background-color: orange;
+            color: black;
+        }
+        /* even = 짝수 */
+        table tr:nth-child(even) {
+            background-color: orangered;
+            color: black;
+        }
+        /* 2n + 1 = 홀수 */
+        table tr:nth-child(2n+1) {
+            background-color: dodgerblue;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>개발자</h1>
+        <!-- table>(tr+td{TEST})*5 -->
+        <table>
+            <tr>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+            </tr>
+            <tr>
+                <td>javaScript</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>JSP</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

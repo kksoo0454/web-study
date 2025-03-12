@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 | Link 관련</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .container {
+            border: 1px solid #000;
+            width: 1000px;
+            margin: 100px auto;
+            }
+        nav {
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        nav ul li {
+            padding: 20px;
+            display: inline-block;
+        }
+        /* Link 관련 가상클래스 */
+        a:link,
+        a:visited {
+            font-size: 14px;
+        }
+        a:hover,
+        a:focus {
+            background-color: #222;
+            color: #fff;
+        }
+        a:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">이용 안내</a></li>
+                    <li><a href="#">객실 소개</a></li>
+                    <li><a href="#">예약방법 및 요금</a></li>
+                    <li><a href="#">예약하기</a></li>
+                </ul>
+            </nav>
+        </div>
+</body>
+</html>

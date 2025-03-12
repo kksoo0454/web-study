@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기초통합실습</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            margin: 0 auto;
+            border: 1px solid #000;
+            width: 960px;
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        header, main, footer {
+            margin-left: 10px;
+        }
+        #mimoticon {
+            width: 200px;
+            height: 200px;
+            -webkit-animation-name: cat_ani;
+            animation-name: cat_ani;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cat_ani {
+            from {
+                width: 200px;
+                height: 200px;
+            }
+            to {
+                width: 500px;
+            }
+        }
+        span {
+            color: red;
+            font-weight: bold;
+        }
+        table, tr, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+        }
+        td {
+            width: 150px;
+            height: 40px;
+        }
+        td p {
+            margin-left: 10px;
+        }
+        hr {
+            width: 880px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><img src="./images/mimoticon.jpg" alt="미모티콘" id="mimoticon"></h1>
+            <section>
+                <h2>이정현</h2>
+        </header>
+        <main>
+            <p>
+                kksoo0454@naver.com
+            </p>
+            <p>
+                이젠컴퓨터학원 자바과정 수행중
+            </p>
+            </section>
+            <section>
+                <h2>SNS</h2>
+                <ul>
+                    <li><a href="#" target="_blank">facebook</a></li>
+                    <li><a href="#"target="_blank">Youtube</a></li>
+                    <li><a href="#"target="_blank">Pinterest</a></li>
+                    <li><a href="#"target="_blank">Twitter</a></li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>사용언어
+                        <ul>
+                            <li><mark>HTML</mark></li>
+                            <li><mark>CSS</mark></li>
+                            <li>javaScript</li>
+                            <li>jQuery</li>
+                        </ul>
+                    </li>
+                    <li>사용툴
+                        <ul>
+                            <li><span>VS CODE</span></li>
+                            <li>eclipse</li>
+                            <li><span>SQL Developer</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <h2>Academic</h2>
+            <section>
+                <table>
+                    <tr>
+                        <td><p>출신학교</p></td>
+                        <td><p>전공</p></td>
+                        <td><p>기간</p></td>
+                        <td><p>졸업구분</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>이젠 고등학교</p></td>
+                        <td><p>해당사항없음</p></td>
+                        <td><p>2020.01.01</p></td>
+                        <td><p>졸업</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>이젠 대학교</p></td>
+                        <td><p>컴퓨터 공학</p></td>
+                        <td><p>2023.01.01</p></td>
+                        <td><p>졸업</p></td>
+                    </tr>
+                </table>
+            </section>
+        </main><hr>
+        <footer>
+            <p>COPYRIGHT &copy;ALL RIGHT RESERVED.</p>
+        </footer>
+    </div>
+</body>
+</html>

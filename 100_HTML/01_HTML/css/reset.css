@@ -1,0 +1,25 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    /* 박스 자동계산 속성 */
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-weight: normal;
+    /* text-align: center; */
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+video, iframe {
+    width: 100%;
+}

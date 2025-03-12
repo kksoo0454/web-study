@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::가상요소</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <style>
+        #wrap {
+            width: 480px;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+        #wrap h1 {
+            font-size: 2rem;
+        }
+        #wrap ul li {
+            margin: 20px;
+        }
+        /* 1i.new -> 태그명 뒤에 띄어쓰기 없이 .클래스 해서 호출 */
+        #wrap ul li.new::after {
+            content: "NEW!!";
+            font-size: 9px;
+            color: #fff;
+            background: #f00;
+            border-radius: 2px;
+            padding: 2px 4px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>제품목록</h1>
+        <ul>
+            <li class="new">제품A</li>
+            <li>제품B</li>
+            <li>제품C</li>
+            <li class="new">제품D</li>
+        </ul>
+    </div>
+</body>
+</html>

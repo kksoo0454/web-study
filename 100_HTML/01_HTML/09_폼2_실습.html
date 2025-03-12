@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 실습</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        #wrap {
+            margin: 0 auto;
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>
+            프론트엔드 개발자 지원서
+        </h1>
+        <p>HTML, CSS, javaScipt,에 대한 기술적 이해의 경험이 있는 분을 찾습니다.</p>
+        <fieldset>
+            <legend>개발자 지원서</legend>
+            <p>개인정보</p>
+            <label for="c_name">이름: </label>
+            <input type="text" id="c_name" placeholder="공백없이 이름 입력"><br>
+            <label for="c_tel">연락처: </label>
+            <input type="tel" id="c_tel">
+            <p>지원분야</p>
+            <label>
+                <input type="radio" name="c_subject" checked>웹퍼블리싱
+            </label><br>
+            <label>
+                <input type="radio" name="c_subject">웹애플리케이션
+            </label><br>
+            <label>
+                <input type="radio" name="c_subject">웹디자인
+            </label>
+            <p>
+                <label for="c_motivation">지원동기</label>
+            </p>
+            <textarea name="motivation" id="c_motivation" rows="6" cols="120" placeholder="본사 지원동기 써주세요"></textarea><br>
+            <input type="submit" value="접수하기">
+            <input type="reset" value="다시쓰기">
+        </fieldset>
+    </div>
+</body>
+</html>
