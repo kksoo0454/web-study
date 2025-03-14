@@ -1,0 +1,115 @@
+@charset "utf-8";
+body {
+    font: 13px "Noto Serif KR", serif;
+    background-color: #aaa;
+}
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* Header */
+header {
+    background-color: #fa0;
+    color: #fff;
+    text-align: center;
+}
+header h1 {
+    font-size: 800%;
+    font-weight: 700;
+}
+header h1 span {
+    font-size: 20px;
+    /* (20/16) => rem은 16px값 고정 */
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 4px;
+    display: block;
+}
+header p {
+    font-size: 12px;
+    /* (12/16) = 0.75 */
+    font-size: 0.75rem;
+    background-color: #ccc;
+    color: #333;
+    padding: 5px;
+}
+header p span {
+    color: blue;
+    font-weight: 700;
+}
+/* contents */
+/* GNB Menu */
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+}
+#container .sidemenu {
+    width: 200px;
+    background-color: #fff;
+}
+#container .sidemenu dt {
+    font: bold 1.3rem "Noto Serif KR", serif;
+    color: #fff;
+    background-color: #900;
+}
+#container .sidemenu dd a {
+    color: #000;
+    border: 1px dashed #000;
+}
+#container .sidemenu dd a:hover {
+    border-bottom: 1px solid #900;
+}
+/* Contents */
+#container .content {
+    width: 400px;
+    background: #ddd;
+    color: #123456;
+}
+#container .content dt a {
+    font: bold 1.3rem "Noto Serif KR", serif;
+    color: #ddd;
+    padding: 5px;
+    background-color: #123456;
+    display: block;
+}
+#container .content dt+dd {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+/* Contents2 */
+#container .aside dt {
+    font: bold 1.2rem "Noto Serif KR", serif;
+}
+#container .aside .all {
+    text-decoration: underline;
+}
+#container .aside .love {
+    color: #fa0;
+    text-decoration: underline;
+}
+#container .aside strong {
+    color: #333;
+}
+#container .aside dd a {
+    color: #000;
+}
+#container .aside span {
+    display: block;
+}
+/* Footer */
+footer p {
+    font: italic 0.75rem "Noto Serif KR", serif;
+    color: #eee;
+    padding: 10px;
+    background-color: #123456;
+    text-align: center;
+}
+footer {
+    color: #900;
+}
+/* 추가 dt, dd */
+dt, dd {
+    padding: 10px;
+}
