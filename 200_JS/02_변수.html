@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        변수 : 변할 수 있는 데이터 | 선언 -> 초기값할당 -> 값할당 -> 사용
+    </title>
+    <style>
+        b {
+            color: red;
+        }
+    </style>
+    <script>
+        // a. 변수선언
+        var box;
+        // b. 초기값
+        box = "100";
+        // c. 값할당
+        box = "200";
+        // d. 사용
+        console.log(box);
+        console.log(typeof(box));
+
+        // 변수선언
+        var str = "Hello javaScript + 자바스크립트 <br><br>";
+        document.write(str);
+        // 숫자형 변수 선언
+        var num = 100;
+        console.log(num);
+        console.log(typeof(num));
+
+        // 실습1. 변수명 num1, num2에 각각 숫자 10과 20을 할당하세요. 콘솔 출력
+        var num1 = 10;
+        var num2 = 20;
+        // clg로 단축어
+        console.log(num1, num2);
+        // 변수 null 선언
+        var result = null;
+        result = num1 + num2;
+        // 문자열 결합 "" + 
+        document.write("두 합의 결과값은 : " + result + " 입니다.!!<br><br>");
+
+        // 실습2. 변수명 number1, number2에 숫자형 데이터 50,80을 할당
+        // (브라우저) 두 인자값의 합을 출력
+        // (출력형식) 계산의 결괏값은 ??? 입니다.
+        var number1 = 50;
+        var number2 = 80;
+        var result2 = number1 + number2;
+        document.write("계산의 결과값은 <b>" +result2 + "</b> 입니다.<br><br>");
+
+        // 논리형 데이터(boolean) = true, false
+        var bool = true;
+        var bool2 = false;
+        var result3 = bool == bool2;
+        console.log(result3);
+
+        // 실습3. 변수명 bool과 1을 비교하여 (콘솔)결과를 출력
+        // (출력형식) 논리형데이터 값 : ??? 입니다.
+        var result4 = bool == 1;
+        console.log("논리형데이터값 : " + result4 + " 입니다.");
+
+        // 데이터 형변환 = 교재 pp. 279 타입캐스팅
+        var com1 = 10;
+        var com2 = 20;
+        var com3 = "30";
+        console.log("형 변환전 : " + typeof(com3));
+        var com4 = "40";
+        var com5 = true;
+        var com6 = false;
+
+        // 같은 숫자형끼리의 연산
+        var hap = com1 + com2;
+        document.write("com1과 com2의 합은 : " + hap + " 입니다.<br><br>");
+
+        // (중요) +연산시 데이터형이 (하나라도) (문자형)일 경우 [무조건] 문자열 결합으로 연산함
+        var result5 = com2 + com4;
+        document.write("문자열 결합의 결과 : " + result5 + " 입니다.<br><br>");
+
+        // 데이터 형변환 : 문자형 -> 숫자형
+        com3 = Number(com3);
+        console.log("형변환 후 => " + typeof(com3));
+        com3 = Number(com3);
+        com4 = Number(com4);
+        var result6 = com3 + com4;
+        console.log("형변환한 변수의 합 : " + result6);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

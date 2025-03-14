@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동적 변수 실습</title>
+    <style>
+        strong {
+            color: red;
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        var num = 100;
+        var num2 = 0.9;
+        var name = prompt("이름을 입력하세요.");
+        var tall = prompt("키를 입력하세요.");
+        var weight = prompt("몸무게를 입력하세요.");
+        var result = (tall-num) * num2;
+        document.write("접수자의 이름은 " + name + " 입니다.<br>");
+        document.write("계산식의 사용된 키는<strong> " + tall + " </strong>cm입니다.<br>");
+        document.write("계산식의 사용된 몸무게는 " + weight + " kg입니다.<br>");
+        document.write("적정 몸무게는<strong> " + result + " </strong>kg입니다.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

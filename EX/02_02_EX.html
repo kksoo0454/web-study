@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    num1: <input type="number" name="num1" id="num1">
+    num2: <input type="number" name="num2" id="num2">
+    결과값: <p id="result"></p>
+    <button onclick="plus(num1, num2)">더하기버튼</button>
+</body>
+<script>
+    let job = '학생';
+    let age = 17;
+
+    console.log(job, age);
+
+    function plus(num1, num2) {
+        let result = num1 + num2;
+        return result;
+    }
+</script>
+</html>
