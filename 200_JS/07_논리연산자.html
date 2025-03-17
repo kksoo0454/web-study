@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>논리연산자</title>
+    <script>
+        var a,b,c,d,result;
+        a = 10;
+        b = 20;
+        c = 0;
+        d = 'javaScript'
+        result = null;
+        console.log(a,b,c,d,result);
+
+        /* 1. 논리연산자(논리합) : || or 연산자로 논리식 중 하나라도 ture면 true */
+        result = b > a || b <= c || a > c;
+        document.write("논리연산자(논리합) : <b>" + result + "</b><br><br>");
+        /* 2. 논리연산자(논리곱) : && and 연산자로 논리식 중 모두가 ture면 true */
+        result = b > a && b <= c && a > c;
+        document.write("논리연산자(논리곱) : <b>" + result + "</b><br><br>");
+        /* 3. 논리연산자(논리부정) : ! not 연산자, 단항 연산자 = 결과의 반대 */
+        result = !(a > b);
+        document.write("논리연산자(논리부정) : <b>" + result + "</b><br><br>");
+
+        /* (중요) 삼항조건연산자 
+            = (형식)조건식?자바스크립트코드1(조건식의 값이 true일 경우 실행) : 자바스크립트코드1(조건식이 false일 경우 실행)*/
+        var int = 30;
+        var int2 = 20;
+        var tf = int>int2?'true일 경우 실행':'false일 경우 실행';
+        document.write(tf + "<br><br>");
+
+        /* 실습. 삼항조건연산자 */
+        var cf = confirm("자바스크립트 어렵나요?");
+        var result = cf?'이정현 YES':"이정현 NO";
+        document.write("<h1>" + result + "</h1>");
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
