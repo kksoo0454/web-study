@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문 종합실습</title>
+    <style>
+        strong {
+            color: red;
+        }
+    </style>
+    <script>
+        /* A. 삼항조건연산자 */
+        /*실습1. (프롬프트)이름,신장,몸무게를 입력받아, 
+            적정체중이 아니면, ???님 건강을 위해 체중관리 요망
+            적정체중이면, ???님 건강관리 잘 하셨네요
+            적정체중 식 = 키-100*0.9
+            (브라우저출력)*/
+        // 캡쳐, 넘버링
+        var name = prompt("이름을 입력하세요", "홍길동");
+        var tall = prompt("키를 입력하세요", "190");
+        var weight = prompt("몸무게를 입력하세요", 81);
+        var result = (tall - 100) * 0.9;
+        weight == result ? 
+            document.write(name + "님 건강관리 잘 하셨네요") :
+            document.write(navigator +"님 건강을 위해 체중관리 요망");
+
+        /*실습2. (프롬프트)1월급여, 2월급여, 3월급여를 입력받아, 
+            3개월 평균급여가 1000이상이면, 고소득자
+            1000이하면, 평균임금자
+            (브라우저출력)*/
+        // var janSalary = prompt("1월 급여를 입력하세요", 1000);
+        // var febSalary = prompt("1월 급여를 입력하세요", 1000);
+        // var marSalary = prompt("1월 급여를 입력하세요", 1000);
+        // var salaryAvg = (janSalary + febSalary + marSalary) / 3;
+        // if(salaryAvg >= 1000) {
+        //     document.write("고소득자");
+        // }else if(salaryAvg <= 1000) {
+        //     document.write("평균소득자");
+        // }
+
+        /* B. if문 관련 */
+        /*실습3. (프롬프트) 나이와 해당연도를 입력받아,
+            40세이상이고, 해당연도가 짝수해이고, 나이도 짝수일 경우
+            "건강검진 대상자입니다."
+            그렇지 않으면 "건강검진 대상자가 아닙니다."
+            (도큐먼트출력)
+        */
+        // 소스캡쳐,캡쳐/넘버링
+        // var age = prompt("나이를 입력하세요", 20);
+        // var year = prompt("해당연도를 입력하세요", 2025);
+        // var result = age >= 40 && year % 2 == 0 && age % 2 == 0;
+        // if(result) {
+        //     document.write("건강검진 대상자입니다.");
+        // }else {
+        //     document.write("건강검진 대상자가 아닙니다.")
+        // }
+
+        /*실습4. else if문사용 (프롬프트) 월(month)을 입력받아,
+            9~11월이면 '가을입니다.'
+            6~8월이면 '여름입니다.'
+            3~5월이면 '봄입니다.'
+            그외 월이면 '겨울입니다.'를 else if문을 사용하여 코딩
+            (도큐먼트출력)*/
+        // 소스캡쳐,캡쳐/넘버링
+        // var month = prompt("당월을 입력하세요", 3);
+        // if(month >=9 && month <= 11) {
+        //     document.write("가을입니다.");
+        // }else if(month >= 6 && month <= 8) {
+        //     document.write("여름입니다.");
+        // }else if(month >= 3 && month <= 5) {
+        //     document.write("봄입니다.");
+        // }else {
+        //     document.write("겨울입니다.");
+        // }
+        /*
+            실습6. [도큐먼트] 구구단 2단 출력 = 단수x승수 = 단수*승수
+        */
+        /* for문 코딩 위치 */
+        // document.write("<h1>2단</h1>")
+        // for(var i = 1; i <= 9; i++) {
+        //     document.write("2 X " + i + " = <strong>" + (2 * i) + "</strong><br>");
+        // }
+        /*
+            실습7. (프롬프트) 구구단 단수를 입력받아, 
+            [도큐먼트] 해당 단수 결과물 출력
+        */
+        var num = prompt("단수를 입력해주세요", 2);
+        document.write("<h1>" + num + "단</h1>");
+        for(var i = 1; i <= 9; i++) {
+            document.write(num + " X " + i + " = " + (num * i) + "<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

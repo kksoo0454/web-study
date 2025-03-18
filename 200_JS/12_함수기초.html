@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>function, 함수</title>
+    <script>
+        /* 함수만들기 */
+        /* 1-1-a. 익명함수 만들기 
+            (형식) var 참조변수명 = function(){실행문;} */
+        var count = 0;
+        var noName = function() {
+            count++;
+            document.write("익명함수 : " + count + "<br>");
+        }
+        /* 1-2-a. 선언적함수 만들기
+            (형식) function 선언적함수명() {실행문;} */
+        function pub() {
+            count++;
+            document.write('선언적 함수 : ' + count + "<br>");
+        }
+
+        /* 1-1-b. 익명함수 호출 = 익명함수 할당 아래에서 호출해줘야 함 */
+        // noName();
+
+        /* 1-1-b. 선언적함수 호출 = 호출시 위치 상관없음 = 호이스팅 방식 */
+        // pub();
+
+        /* 
+            실습1. (익명함수)
+            (기능) (프롬프트) 숫자를 입력받아,
+                   (경고창) 입력받은 숫자에 +10을 한 결괏값을 반환하는 함수 제작
+        */
+        // var plusNum = function() {
+        //     var num = Number(prompt("숫자를 입력하세요", 1));
+        //     alert(num + 10);
+        // }
+        // plusNum();
+
+        /* 
+            실습2. (선언적함수) 함수명 print
+            (기능) (경고창) 문자열 "자바스크립트 선언적함수 호출" 반환하는 함수 제작
+        */
+        // 소스캡쳐, 캡쳐 넘버링
+        print();
+        function print() {
+            alert("자바스크립트 선언적함수 호출");
+        }
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

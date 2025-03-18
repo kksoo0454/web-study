@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택문 실습 CSS + JS</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: navy;
+        }
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            color: white;
+            font-weight: 700;
+        }
+        strong {
+            color: yellow;
+            font-size: 50px;
+        }
+    </style>
+    <script>
+        var part = prompt("1-웹디자인, 2-웹개발, 3-웹기획 중 숫자 하나 선택", "1");
+        switch(part) {
+            case "1":
+                document.write("<h1>웹디자인 섹션은 <strong>401호</strong>에서 진행</h1>");
+                break;
+            case "2":
+                document.write("<h1>웹개발 섹션은 <strong>402호</strong>에서 진행</h1>");
+                break;
+            case "3":
+                document.write("<h1>웹기획 섹션은 <strong>403호</strong>에서 진행</h1>");
+                break;
+            default:
+                alert("잘못입력!!");
+                location.reload();
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

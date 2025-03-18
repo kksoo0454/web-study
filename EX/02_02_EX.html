@@ -3,23 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EX</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .number {
+            border: 2px solid #000;
+            border-bottom: 0px;
+            width: 240px;
+            height: 80px;
+        }
+        .buttons {
+            border: 2px solid #000;
+            display: flex;
+            flex-flow: row wrap;
+            width: 240px;
+            height: 320px;
+            position: relative;
+        }
+        input {
+            width: 25%;
+            height: 80px;
+        }
+        .buttons input:nth-child(12) {
+            width: 50%;
+        }
+        .buttons input:nth-child(14) {
+            height: 160px;
+            position: absolute;
+            left: 180px;
+            bottom: 0px;
+        }
+    </style>
+    
 </head>
 <body>
-    num1: <input type="number" name="num1" id="num1">
-    num2: <input type="number" name="num2" id="num2">
-    결과값: <p id="result"></p>
-    <button onclick="plus(num1, num2)">더하기버튼</button>
+    <div class="number"></div>
+    <div class="buttons">
+        <input type="button" value="7">
+        <input type="button" value="8">
+        <input type="button" value="9">
+        <input type="button" value="+">
+        <input type="button" value="4">
+        <input type="button" value="5">
+        <input type="button" value="6">
+        <input type="button" value="-">
+        <input type="button" value="3">
+        <input type="button" value="2">
+        <input type="button" value="1">
+        <input type="button" value="0">
+        <input type="button" value=".">
+        <input type="button" value="Enter">
+    </div>
+    
 </body>
 <script>
-    let job = '학생';
-    let age = 17;
-
-    console.log(job, age);
-
-    function plus(num1, num2) {
-        let result = num1 + num2;
-        return result;
-    }
+    var number = document.querySelectorAll("input");
+    
+    
 </script>
 </html>
