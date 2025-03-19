@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수사용, 매개변수 parameter</title>
+    <script>
+        /* 매개변수가 있는 선언적 함수
+        (형식) 
+        function 함수명(데이터가 담길 변수명 = 호출하는 곳에서 데이터를 넘겨줌 => 매개변수){
+            실행문;
+        }
+        */
+        function ezFn(name, area) {
+            document.write("안녕하세요 " + name + " 입니다.<br>");
+            document.write("사는 곳은 " + area + " 입니다.<br>");
+        }
+
+        /* (실습) 선언적 함수명 = ezFn2, 매개변수명 = name, area (기능)(브라우저)안녕하세요 ???? 입니다.  */
+        /* 이벤트 리스너 = 이벤트 핸들러 */
+        function ezFn2(name) {
+            document.write("안녕하세요 " + name + " 입니다.<br>");
+        }
+        function ezFn3(area) {
+            document.write("사는 곳은 " + area + " 입니다.<br>");
+        }
+
+        /* 함수호출 = 자동실행 */
+        ezFn("홍길동", "상계동");
+        ezFn2("홍길동");
+
+    </script>
+</head>
+<body>
+    <!-- 이벤트 호출 = DOM 객체 = 인라인방식 -->
+    <button onclick="ezFn2('동길홍')">버튼1</button>
+    <button onclick="ezFn3('한국')">버튼2</button>
+</body>
+</html>

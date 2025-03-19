@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 실습</title>
+    <style>
+        strong {
+            color: red;
+            font-weight: 700;
+            font-size: 24px;
+        }
+    </style>
+    <script>
+        /* 실습1.(프롬프트)비밀번호를 입력받아,
+            (경고창)8자 미만이면 "8자 이상으로 다시 입력하시오"
+            (브라우저)8자 이상이면 "비밀번호 ???자가 입력되었습니다."
+            소스캡쳐,캡쳐 넘버링 */
+        var str = prompt("비밀번호를 입력하세요", 1111);
+        if (str.length < 8) {
+            alert("8자 이상으로 다시 입력하시오");
+        } else if (str.length >= 8) {
+            document.write("비밀번호<strong> " + str.length + "</strong>자가 입력되었습니다.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

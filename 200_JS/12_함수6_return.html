@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>return문</title>
+    <script>
+        /* 1. 호출한 곳에 결괏값을 던져줌 */
+        var num = 0;
+        function plusNum(num) {
+            return num + 10;
+        }
+        // 호출
+        // alert(plusNum(10));
+
+        /* 2. return false; = 여기까지 실행 */
+        var int = 10;
+        var sum = 0;
+        var mul = 0;
+        function cal(int1) {
+            sum = int1 + int;
+            mul = int1 * int;
+            return sum;
+            return mul;
+        }
+        // 호출
+        document.write(cal());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

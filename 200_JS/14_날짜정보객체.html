@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜정보객체</title>
+    <style>
+        strong {
+            color: red;
+            font-weight: 24;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        /* 1. 날짜 객체 생성 Date | today = 참조변수명 */
+        var today = new Date();
+        console.log(today);
+        var thisYear = today.getFullYear(); //해당 연도
+        var thisMonth = today.getMonth(); + 1; // 해당 월(0~11)
+        var thisDate = today.getDate(); // 날짜
+        var thisDay = today.getDay(); // 요일 일요일(0) ~ 토요일(6)
+        var thisHour = today.getHours(); // 시간
+        var thisMin = today.getMinutes(); // 분
+        var thisSec = today.getSeconds(); // 초
+        var thisMillSec = today.getMilliseconds(); // 밀리세컨
+        // 1970년 1월 1일부터 밀리세컨으로 경과된 시간
+        var thisTime = today.getTime();
+
+        switch(thisDay) {
+            case 0:
+                thisDay = "일";
+                break;
+            case 1:
+                thisDay = "월";
+                break;
+            case 2:
+                thisDay = "화";
+                break;
+            case 3:
+                thisDay = "수";
+                break;
+            case 4:
+                thisDay = "목";
+                break;
+            case 5:
+                thisDay = "금";
+                break;
+            case 6:
+                thisDay = "토";
+                break;
+        }
+
+        document.write("해당년은 : <strong>" + thisYear + "</strong>년 입니다. <br>");
+        document.write("해당월은 : <strong>" + thisMonth + "</strong>월 입니다. <br>");
+        document.write("해당일은 : <strong>" + thisDate + "</strong>일 입니다. <br>");
+        document.write("해당요일은 : <strong>" + thisDay + "</strong>요일 입니다. <br>");
+        document.write("해당시간은 : <strong>" + thisHour + "</strong>시 입니다. <br>");
+        document.write("해당분은 : <strong>" + thisMin + "</strong>분 입니다. <br>");
+        document.write("해당초는 : <strong>" + thisSec + "</strong>초 입니다. <br>");
+        document.write("해당밀리초는 : <strong>" + thisMillSec + "</strong>밀리초 입니다. <br>");
+        document.write("해당 getTime은 : <strong>" + thisTime + "</strong>밀리초 입니다. <br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

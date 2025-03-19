@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수종합실습</title>
+    <style>
+        button {
+            width: 120px;
+            height: 80px;
+            background-color: darkgray;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        /*실습1. 익명함수를 만들고,
+            로딩시 (경고창)"자바스크립트 수업"*/
+        var noName = function() {
+            alert("자바스크립트 수업");
+        }
+        // noName();
+
+        /*실습2. 선언적함수를 만들고 = test,
+            로딩시 (브라우저)"자바스크립트 개념정리"*/
+        function test() {
+            document.write("자바스크립트 개념정리");
+        }
+        // test();
+
+        /* 실습3. 버튼1을 클릭했을때 => (경고창)"안녕하세요."
+                  버튼2를 클릭했을때 -> (경고창)"반갑습니다."
+                  매개변수 사용 */
+        function hello(msg) {
+            alert(msg);
+        }
+        /* for문 사용 배열아이템(=배열요소) 모두 가져오기 */
+        // 배열명 coding 배열요소 (문자열)HTML, CSS, javaScrip, jQuery, JAVA, JSP, Oracle
+        var coding = ["HTML", "CSS", "javaScript", "jQuery", "JAVA", "JSP", "Oracle", "React"];
+        // (도큐먼트) 모든 배열요소 출력
+        for (var i = 0; i < coding.length; i++) {
+            document.write(coding[i] + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="hello('안녕하세요.');">버튼1</button>
+    <button onclick="hello('반갑습니다.');">버튼2</button>
+</body>
+</html>
