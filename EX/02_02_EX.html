@@ -8,11 +8,12 @@
         body {
             text-align: center;
         }
-        .number {
+        #numberBox {
             border: 2px solid #000;
             border-bottom: 0px;
             width: 240px;
             height: 80px;
+            font-size: 24px;
         }
         .buttons {
             border: 2px solid #000;
@@ -39,80 +40,31 @@
     
 </head>
 <body>
-    <div class="number"></div>
+    <div id="numberBox">공란</div>
     <div class="buttons">
-        <input onclick="num7()" type="button" value="7" id="7">
-        <input onclick="num8()"type="button" value="8" id="8">
-        <input onclick="num9()"type="button" value="9" id="9">
-        <input onclick="plus()" type="button" value="+">
-        <input onclick="num4()"type="button" value="4">
-        <input onclick="num5()"type="button" value="5">
-        <input onclick="num6()"type="button" value="6">
-        <input onclick="minus()" type="button" value="-">
-        <input onclick="num3()"type="button" value="3">
-        <input onclick="num2()"type="button" value="2">
-        <input onclick="num1()"type="button" value="1">
-        <input onclick="num0()"type="button" value="0">
-        <input onclick="dot()" type="button" value=".">
-        <input onclick="enter()" type="button" value="Enter">
+        <input onclick="input('7')" type="button" value="7" id="7">
+        <input onclick="input('8')"type="button" value="8" id="8">
+        <input onclick="input('9')"type="button" value="9" id="9">
+        <input onclick="input('+')" type="button" value="+">
+        <input onclick="input('4')"type="button" value="4">
+        <input onclick="input('5')"type="button" value="5">
+        <input onclick="input('6')"type="button" value="6">
+        <input onclick="input('-')" type="button" value="-">
+        <input onclick="input('3')"type="button" value="3">
+        <input onclick="input('2')"type="button" value="2">
+        <input onclick="input('1')"type="button" value="1">
+        <input onclick="input('0')"type="button" value="0">
+        <input onclick="input('.')" type="button" value=".">
+        <input onclick="input('enter')" type="button" value="Enter">
     </div>
     
 </body>
 <script>
-    var number = 0;
-    var result = null;
-    var p = null;
-    if (result !== null) {
-        Number(result);
-    }
-    function num9() {
-        console.log(9);
-        number += "9";
-        console.log(number);
-    }
-    function num8() {
-        console.log(8);
-        number += "8";
-        console.log(number);
-    }
-    function num7() {
-        console.log(7);
-        number += "7";
-        console.log(number);
-    }
-    function num6() {
-        console.log(6);
-    }
-    function num5() {
-        console.log(5);
-    }
-    function num4() {
-        console.log(4);
-    }
-    function num3() {
-        console.log(3);
-    }
-    function num2() {
-        console.log(2);
-    }
-    function num1() {
-        console.log(1);
-    }
-    function plus() {
-        result += Number(number);
-        number = 0;
-        console.log("result: " + result);
-        p = true;
-    }
-    function minus() {
-        result -= Number(number);
-        number = 0;
-        console.log("result: " + result);
-        p = false;
-    }
-    function enter() {
-        p ? result += Number(number) : result -= Number(number);
-        console.log("result: " + result);
+    var number = null;
+    var numberBox = document.querySelector("#numberBox");
+    var result = 0;
+    function input(e) {
+        number += e;
     }
 </script>
 </html>

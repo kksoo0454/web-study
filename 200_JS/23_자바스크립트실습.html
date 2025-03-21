@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 표준이벤트 실습</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            text-align: center;
+            cursor: pointer;
+        }
+        #container img {
+            width: 100%;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            /* #1. DOM 객체 할당 */
+            var pic = document.querySelector("#pic");
+            /* #2. Event Listener 작성 */
+            function changImg() {
+                pic.src = "./images/img2.jpg";
+            }
+            function originPic() {
+                pic.src = "./images/img1.jpg";
+            }
+            /* #3. Event Listener 연결 */
+            pic.addEventListener("mouseenter", changImg);
+            pic.addEventListener("mouseleave", originPic);
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/img1.jpg" alt="제니이미지" id="pic">
+    </div>
+</body>
+</html>

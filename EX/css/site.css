@@ -1,0 +1,140 @@
+@charset "utf-8";
+
+body {
+    text-align: center;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+.headerMenu ul {
+    display: flex;
+}
+.headerMenu ul li {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+.menu1 li {
+    background-color: red;
+}
+.menu2 li{
+    background-color: green;
+}
+.searchBox {
+    width: 700px;
+    height: 50px;
+    background-color: gray;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+.iconMenu {
+    margin-bottom: 20px;
+}
+.iconMenu ul {
+    display: flex;
+    justify-content: center;
+}
+.iconMenu li {
+    width: 60px;
+    height: 60px;
+    background: steelblue;
+    margin: 5px;
+}
+main {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.mainSec1 div {
+    width: 800px;
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+.mainSec1 div:nth-child(1) {
+    height: 120px;
+}
+.mainSec1 div:nth-child(2) {
+    height: 360px;
+    background-color: orange;
+}
+.mainSec1 div:nth-child(3) {
+    height: 360px;
+    background-color: yellowgreen;
+}
+.mainSec1 div:nth-child(4) {
+    height: 360px;
+    background-color: purple;
+}
+.mainSec1 div:nth-child(5) {
+    height: 170px;
+    background-color: skyblue;
+}
+.mainSec2 div {
+    width: 370px;
+    background-color: yellow;
+    margin-bottom: 20px;
+}
+.mainSec2 div:nth-child(1) {
+    height: 150px;
+    background-color: salmon;
+}
+.mainSec2 div:nth-child(2) {
+    height: 300px;
+    background-color: khaki;
+}
+.mainSec2 div:nth-child(3) {
+    height: 100px;
+    background-color: aquamarine;
+}
+.mainSec2 div:nth-child(4) {
+    height: 200px;
+    background-color: olive;
+}
+.mainSec2 div:nth-child(5) {
+    height: 300px;
+    background-color: teal;
+}
+.mainSec2 div:nth-child(6) {
+    height: 300px;
+    background-color: sandybrown;
+}
+.mainSec2 fieldset {
+    width: 300px;
+    height: 130px;
+    margin: auto;
+}
+.mainSec2 li {
+    line-height: 40px;
+}
+footer {
+    background-color: gray;
+    padding-top: 40px;
+}
+.footerAd {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    padding: 40px 0 ;
+}
+.footerAd div {
+    width: 350px;
+    height: 100px;
+    background-color: rosybrown;
+}
+.footerLink {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 ;
+}
+.footerLink p {
+    width: 400px;
+    height: 50px;
+    background-color: white;
+}

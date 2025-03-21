@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Event 호출 참조</title>
+    <script>
+        window.onload = function() {
+            /* 1. DOM 선택 */
+            var btn = document.querySelector("#button");
+            /* 3. 이벤트 연결 */
+            btn.onclick = alt;
+        }
+        /* 2. 이벤트 리스너 작성 */
+        function alt() {
+            alert("준비완료!!");
+        }
+    </script>
+</head>
+<body>
+    <button id="button">버튼</button>
+</body>
+</html>
