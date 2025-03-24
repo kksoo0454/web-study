@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리 조합 선택자</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // 문서전체 글자색 gray
+            $("*").css("color", "gray");
+            // 아이디 값 a = 글자색 red, 배경색 black
+            $("#a").css({color: "red", backgroundColor: "black"});
+            // div태그중 id값이 b인 요소만 선택 | 소스캡쳐, 캡쳐 넘버링 = 글자색 오랜지
+            // -> 바로 붙여서 아이디값 이어주기
+            $("div#b").css("color", "orange");
+            // div태그중 class값이 test인 요소만 선택 | 소스캡쳐, 캡쳐 넘버링 = 글자색 그린
+            $("div.test").css({color: "green", backgroundColor: "silver"});
+
+            // 하위 선택자
+            $("div h2").css({"font-size": "24px", "background-color": "black"});
+            // 그룹 선택자 | 아이디 a, 요소명 h2, 클래스명 main => 밑줄, 글자색 레드, 글자크기 36
+            // 캡쳐,넘버링
+            $("#a, h2,.main").css({textDecoration: "underline", color: "red", "font-Size": "36px"});
+        });
+    </script>
+</head>
+<body>
+    <h1>여러가지 제이쿼리 선택자</h1>
+    <div class="content">
+        <div id="a">
+            제이쿼리
+        </div>
+    </div>
+    <div>
+        여러가지 선택자
+    </div>
+    <div class="test">
+        애플 제품들
+    </div>
+    <div class="test main">
+        맥프로
+    </div>
+    <div>
+        <span>맥북프로</span>
+        <h2 id="c">맥북에어</h2>
+    </div>
+    <div id="b">
+        아이패드
+    </div>
+    <div class="test">
+        아이패드 프로
+    </div>
+    <div class="main">
+        아이패드 에어
+    </div>
+    <div class="test">
+        에어팟
+    </div>
+    <div>
+        <h2 class="test">애플태그</h2>
+    </div>
+</body>
+</html>

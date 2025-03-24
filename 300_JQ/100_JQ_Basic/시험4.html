@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정현_평가파일4</title>
+    <script>
+        window.onload = function() {
+            var mouseenter = document.getElementById("mouseenter");
+            var mouseleave = document.getElementById("mouseleave");
+            var img = document.getElementById("img");
+            function changePic() {
+                img.src = "./images/img2.jpg";
+            }
+            function originPic() {
+                img.src = "./images/img1.jpg";
+            }
+            mouseenter.addEventListener("mouseenter", changePic);
+            mouseleave.addEventListener("mouseleave", originPic);
+            img.addEventListener("mouseenter", changePic);
+            img.addEventListener("mouseleave", originPic); // 맞는지모르겠다;
+        }
+    </script>
+</head>
+<body>
+    <img src="./images/img1.jpg" alt="이미지1" id="img">
+    <button id="mouseenter">마우스엔터</button>
+    <button id="mouseleave">마우스리브</button>
+</body>
+</html>
