@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리, 문서객체제작</title>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /* 1. remove() : 선택 DOM객체 제거 = 태그 자체를 삭제 = 매개변수 없음 */
+            // $('h3').eq(0).remove();
+            // h3 첫번째 노드 제거 | 소스캡처
+            // $('h3').first().remove();
+
+            /* 2. empty() : 자식노드를 제거(텍스트노드도 삭제) */
+            $('div').empty(); // div 자체는 남아있음
+
+            /* 3. $() = jQuery()
+                a. DOM객체 선택
+                b. 태그 생성 : 매개변수로 HTML요소 문자열로 DOM객체 생성 가능
+                b-1. appendTo() : 매개변수의 맨 마지막 자식요소로 태그 생성 */
+            $('<h2>Dead Poet Society</h2>').css({color: 'purple'}).appendTo('body');
+
+            /*실습. jQuery메서드를 이용하여 body요소의 자식으로 img태그를 생성하시오. img1.jpg
+                    attr()함께 사용하여 너비 300 높이 300 대체텍스트=이미지1*/
+            $('<img>').attr({'src': './images/img1.jpg', width: 300, height: 300, alt: '이미지1'}).appendTo('body');
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Carpe Diem!!</h1>
+        <h2>현재를 즐겨라</h2>
+    </div>
+    <h3>나의 금기어</h3>
+    <h3>
+        &quot;언젠가&quot; &quot;아마도&quot; &quot;만약에&quot;
+    </h3>
+    <h4>
+        Written By 파울로 코엘료
+    </h4>
+    <h5>ONE</h5>
+    <h5>TWO</h5>
+    <h5>THREE</h5>
+    <h5>FOUR</h5>
+</body>
+</html>
