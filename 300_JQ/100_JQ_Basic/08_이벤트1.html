@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제이쿼리, 이벤트</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        h5, button {
+            cursor: pointer;
+        }
+    </style>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /* 1. 단일 이벤트 */
+            $('h5').click(function(){
+                alert('단일 이벤트 호출');
+            });
+            /* 2. one() 이벤트 메서드 : 이벤트 한번만 실행 */
+            $('h5').one('click', function(){
+                alert('one이벤트 실행');
+            });
+
+            /* 3-1. on() 이벤트 메서드 : 하나의 DOM요소에 여러개 이벤트 등록 가능 */
+            $('h5').on('click', function(){
+                alert('on이벤트 실행');
+            });
+            /* 3-2. on() 이벤트 메서드 : 여러개 이벤트 등록 */
+            $('h5').on({'mouseenter': function(){
+                alert('마우스엔터');
+            }, 'mouseleave': function(){
+                alert('마우스리브');
+            }});
+            
+            /* 4. hover() 이벤트 메서드 : mouseenter() + mouseleave() */
+            $('h5').hover(function(){
+                alert('마우스엔터시');
+            }, function(){
+                alert('마우스리브시');
+            });
+
+            // 실습. 버튼을 클릭했을때, h6에 "이벤트작동완료!!" 텍스트노드 삽입 + 글자색 레드
+            $('button').click(function(){
+                $('h6').text("이벤트작동완료!!").css({color: 'red'});
+            });
+        });
+    </script>
+</head>
+<body>
+    <h5>제이쿼리 이벤트 사용방법</h5>
+    <h6></h6>
+    <button>버튼</button>
+</body>
+</html>
